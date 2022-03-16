@@ -1,4 +1,4 @@
-"""simplesocial URL Configuration
+"""excel_sp URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.1/topics/http/urls/
@@ -22,6 +22,6 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('uploadhome/',views.uploadhome,name='uploadhome'),
-    path('upload/',views.upload,name="upload"),
+    path('result/',views.result,name='result'),
+    path('',views.upload,name="upload"),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

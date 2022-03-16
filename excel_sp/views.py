@@ -9,10 +9,7 @@ import pyodbc
 # from flask_session import Session
 
 
-
-
-
-def uploadhome(request):
+def result(request):
     if request.method == 'POST':
         file = request.FILES['myfile']
         table = pd.read_excel(file)
